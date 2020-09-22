@@ -1,0 +1,92 @@
+/* TODA la página */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; /* Contener los contenedores dentro el contenedor padre */
+}
+/* Barra de navegación */
+.barra {
+    text-align:center;
+}
+.main-nav {
+    text-align: center; /* NO FUNCIONA */
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.main-nav__item {
+    display: inline-block;
+    border: 2px solid black;
+    background-color: grey;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+}
+/*.main-nav__item {             Para adaptar lo del error del botón (mirar explicación en el .html
+    text-decoration: none;
+}*/
+.main-nav__item a{
+    text-decoration: none;
+}
+.main-nav__item:hover {
+    background-color: yellow;
+}
+
+/* Aplicar a todas las secciones */
+section {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align:center;
+    border: 2px solid black;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* Sección 1 */
+.article {
+    display: inline-block;
+    text-align: justify;
+}
+.article-2 {
+    width: 48%;
+    padding-left: 15px;
+    vertical-align: top;
+}
+
+/* Sección 2 */
+#Seccion-2 {
+    background: url("Fondo_Seccion-2.jpg");    /* Posar una imatge de fons */
+    background-size: cover;
+}
+/*.lista-desordenada {*/
+.lista-desordenada {
+    list-style-image: url("logo-transparent_S1_pe.jpg");
+    list-style-position: inside; /* Para mover la imagen al lado del texto */
+}
+.lista-desordenada li {
+    list-style-image: none; /* Para evitar que la imagen también te la ponga en el resto de <li> */
+}
+ol li {
+    font-size: 12px;
+}
+
+/* Sección 3 */
+/* RES */
+
+/* Sección 4 */
+table {
+    margin: 0 auto; /* Centrar toda la tabla en medio */
+}
+th, td { 
+    border: 2px solid blue;
+    height: 30px;
+    width: 50px;
+    padding: 5px;
+}
+th {
+    width: min-content; /*Como "Col 1" es un texto más largo que los números "1.1, 2.1...", 
+                          te ponía el 1 debajo del "Col", por lo que aplicandole este tipo de width se arregla */
+}
+td {
+    text-align: left; 
+}

@@ -1,0 +1,126 @@
+/* TODA la página */
+* {
+    box-sizing: border-box; /* Contener los contenedores dentro el contenedor padre */
+}
+
+/* Tota la Web */
+body{
+    width: 80%;
+    text-align: center;
+}
+
+/* Capçalera */
+header {
+    background: url("punta_cana_1.jpg");
+    height: 450px;
+    width: 800px;
+    position: relative; /* Para que dependa del header (sus hijos -título y navegadores-) (ya que por defecto 
+                           depende del body todo */
+    margin-bottom: 30px;
+}
+.title {
+    text-align:center;
+    color: white;
+    position: absolute;
+    top: 180px;
+    left: 320px;
+    font-size: 180%;
+}
+#Inicio{
+    position: absolute;
+    bottom:10px;
+    left: 210px;
+    font-size: 120%;
+}
+
+/* Barra de navegació */
+.main-nav__item {
+    display: inline-block;
+}
+.main-nav__item a {
+    text-decoration: none;
+    padding: 2px 7px 2px 7px;
+}
+.main-nav__item:hover {
+    background-color: grey;
+}
+
+/* Aplicar a todas las secciones */
+section {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* Sección 1 */
+.img-pdf {
+    float: left;
+    margin-right: 20px;
+}
+.text-s2 {
+    text-align: justify;
+}
+
+/* Sección 2 */
+#Seccion-2 {
+    width: 75%;
+    margin: auto;
+}
+.title-s2 {
+    text-align: center;
+}
+.three-boxes {
+    display: flex;
+    text-align: center;
+}
+.three-boxes img{
+    text-align: center;
+    width: 100%;
+    padding-left: 30px;
+}
+.three-boxes p{
+    text-align: justify;
+    width: 90%;
+    padding-left: 30px;
+}
+
+/* Sección 3 */
+#Seccion-3 {
+    width: 75%;
+    margin: auto;
+}
+.title-s3 {
+    text-align: center;
+}
+.form-and-map {
+    display: flex;
+}
+form {
+    width: 45%;
+}
+iframe {
+    float: right;
+    padding-left: 20px;
+}
+
+/* Pie de página */
+footer ul {
+    background-color:blue;
+}
+footer li {
+    display: inline;
+}
+footer ul a {
+    padding: 2px 7px 2px 7px;
+    color: white;
+    text-decoration: none;
+}
+footer ul a:hover{
+    background-color: grey;
+} 
+.social {
+    background-color: none;
+} 
+.social img{
+    display: inline-block;
+    width:28px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio Recopilatorio I</title>
+    <link rel="stylesheet" href="main_AC1.css">
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <h2 class="barra">Barra de navegación</h2>
+        <div>
+            <nav class="main-nav">
+                <button class="main-nav__item"><a href="#Seccion-1">Sección 1</a></button>
+                <button class="main-nav__item"><a href="#Seccion-2">Sección 2</a></button>
+                <button class="main-nav__item"><a href="#Seccion-3">Sección 3</a></button>
+                <button class="main-nav__item"><a href="#Seccion-4">Sección 4</a></button>
+                <!--<a class="main-nav__item" href="#Seccion-1">Sección 1</a>
+                    El único error! Al clikar el botón (cualquiera de los 4), no va a la sección que toca, sólo si te situas encima del texto dentro del botón, y debe de ser todo el botón -->
+            </nav>
+            <!-- Con el símbolo # y declarando 1 id en cada sección; puedes acceder (tipo link) a cada sección -->
+        </div>
+    </header>
+    <hr>
+    <main>
+        <!-- Sección 1 -->
+        <section id="Seccion-1">
+            <h2>Sección 1: imagen y texto alrededor</h2>
+            <article class="article">
+                <img src="Imagen_Seccion1.jpg" alt="Pueblo en un acantilado">
+            </article>
+            <article class="article article-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae assumenda, ut voluptas illum
+                    ullam soluta quia pariatur fugiat? Iusto illo minus quam tempora recusandae nam quos ipsa
+                    voluptatum quidem enim?
+                </p>
+            </article>
+            <article class="article">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis eveniet labore nostrum eaque ea
+                    esse tempora quia quod saepe aperiam illum cumque doloremque fugiat harum velit, vero dolore
+                    repellat recusandae.
+                </p>
+            </article>
+        </section>
+        <hr>
+        <!-- Sección 2 -->
+        <section id="Seccion-2">
+            <h2>Sección 2: listas y fondos</h2>            
+            <article>
+                <ul>
+                    <li class="lista-desordenada">Elemento 1 lista con imágenes
+                        <ol>
+                            <li>Elemento 1 sublista</li>
+                            <li>Elemento 2 sublista</li>
+                            <li>Elemento 3 sublista</li>
+                        </ol>
+                    </li>
+                    <li class="lista-desordenada">Elemento 2 lista con imágenes
+                        <ol>
+                            <li>Elemento 1 sublista</li>
+                            <li>Elemento 2 sublista</li>
+                            <li>Elemento 3 sublista</li>
+                        </ol>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <hr>
+        <!-- Sección 3 -->
+        <section id="Seccion-3">
+            <h2>Sección 3: texto con estilos</h2>
+            <p><span style="color:blue">Este párrafo tiene un alto de línea de 30px y todo él es de color
+                    azul,</span><span style="color:red">excepto esta frase que es de color rojo.</span></p>
+            <p>Este segundo párrafo contiene alguna palabreja en <i>cursiva (como por ejemplo ésta)</i> y alguna que
+                otra en <b>negrita</b></p>
+            <p>En este tercer párrafo escribiremos una fórmula matemática: a=I<sup>2</sup>
+                Y a fórmula del dióxido de carbono: CO<sub>2</sub></p>
+            <p>En este párrafo tenemos un <del>texto tachado</del> y un texto <u>que acabamos de añdir</u></p>
+            <p>Y este párrafo es un ejemplo de código: for (f=1; f&#60=10; f++)</p>
+        </section>
+        <hr>
+        <!-- Sección 4 -->
+        <section id="Seccion-4">
+            <h2>Sección 4: tablas y enlaces externos</h2>
+            <a href="http://www.google.es" target="_blank">Enlace a google</a> <!-- con target="_blank consigues que te abra el enlace en otra pestaña -->
+            <table>
+                <tr>
+                    <th>Col 1</th>
+                    <th>Col 2</th>
+                    <th>Col 3</th>
+                </tr>
+                <tr>
+                    <td colspan="2">1.1</td> <!--Combinar 2 celdas horizontalmente-->
+                    <td rowspan="3">1.3</td> <!--Combinar 3 celdas verticalmente-->
+                </tr>
+                <tr>
+                    <td>2.1</td>
+                    <td>2.2</td>
+                </tr>
+                <tr>
+                    <td>3.1</td>
+                    <td>3.2</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
